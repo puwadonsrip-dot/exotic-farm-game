@@ -16,9 +16,13 @@
 - [ ] **เปลี่ยน Local path** เป็นที่ใหม่ เช่น `D:\test-clone` (อย่าทับของเดิม)
 - [ ] Clone เสร็จ → เปิดโฟลเดอร์ดู ต้องเห็น `Assets`, `Packages`, `ProjectSettings`
 - [ ] Unity Hub → `Add project from disk` → ชี้ไปที่ `test-clone`
-- [ ] เปิดโปรเจกต์ → **จับเวลาไว้ด้วย** จะได้รู้ว่าวันพรีเซนต้องเผื่อเวลาเท่าไหร่
-- [ ] เปิด `Assets/project.unity` → กด Play → เล่นได้ปกติ
-- [ ] Console ไม่มี error สีแดง
+- [ ] เปิดโปรเจกต์ → รอ `Importing assets` (ทดสอบแล้วใช้ ~5 นาที เครื่องช้ากว่านี้อาจนานกว่า)
+- [ ] เปิด **`Assets/project.unity`** → กด Play → เล่นได้ปกติ
+
+  > ซีนหลักอยู่ที่**ราก** `Assets` ไม่ได้อยู่ในโฟลเดอร์ `Scenes`
+  > ในหน้าต่าง Project คลิก `Assets` ตัวบนสุด แล้วหาไอคอนลูกบาศก์ชื่อ `project`
+
+- [ ] Console ไม่มี error สีแดง (warning สีเหลืองจาก HappyHarvest ไม่ต้องสนใจ)
 
 **ผ่านแล้วลบโฟลเดอร์ `test-clone` ทิ้งได้เลย** (ลบจากเครื่อง ไม่กระทบ GitHub)
 

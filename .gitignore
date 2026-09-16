@@ -1,0 +1,74 @@
+# ===================================================
+#  Unity — ไฟล์ที่ไม่ต้องอัปขึ้น GitHub
+#  พวกนี้ Unity สร้างใหม่เองได้ทุกครั้งที่เปิดโปรเจกต์
+#  (Library/ อย่างเดียวก็หลายกิกะไบต์แล้ว)
+# ===================================================
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Asset Store tools บางตัวสร้างโฟลเดอร์นี้
+/[Aa]ssets/AssetStoreTools*
+/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# ---------------------------------------------------
+#  ไฟล์ .meta ของ Asset ต้องเก็บเสมอ ห้ามข้าม
+#  ถ้าหายไป Unity จะมองว่าเป็นไฟล์ใหม่ แล้วลิงก์ในซีนจะขาดหมด
+# ---------------------------------------------------
+!/[Aa]ssets/**/*.meta
+
+# ---------------------------------------------------
+#  ไฟล์โปรเจกต์ของ Visual Studio / Rider
+#  Unity สร้างใหม่ให้เองตอนเปิดโค้ด
+# ---------------------------------------------------
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# ---------------------------------------------------
+#  ไฟล์ Build และไฟล์ชั่วคราว
+# ---------------------------------------------------
+sysinfo.txt
+crashlytics-build.properties
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# ---------------------------------------------------
+#  ขยะของระบบปฏิบัติการและโปรแกรมแก้โค้ด
+# ---------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vs/
+.vscode/

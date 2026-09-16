@@ -1,0 +1,59 @@
+# ===================================================
+#  บอก Git ว่าไฟล์ไหนเป็นข้อความ ไฟล์ไหนเป็นไฟล์ภาพ/เสียง
+#  ช่วยไม่ให้ไฟล์ซีนพังตอนสลับเครื่อง Windows / Mac
+# ===================================================
+
+* text=auto
+
+# ---- ไฟล์ของ Unity ที่เป็นข้อความ (YAML) ----
+*.cs               text diff=csharp
+*.unity            text eol=lf
+*.prefab           text eol=lf
+*.asset            text eol=lf
+*.meta             text eol=lf
+*.mat              text eol=lf
+*.anim             text eol=lf
+*.controller       text eol=lf
+*.overrideController text eol=lf
+*.physicMaterial   text eol=lf
+*.physicsMaterial2D text eol=lf
+*.playable         text eol=lf
+*.mixer            text eol=lf
+*.shader           text eol=lf
+*.shadergraph      text eol=lf
+*.cginc            text eol=lf
+*.hlsl             text eol=lf
+*.json             text eol=lf
+*.asmdef           text eol=lf
+*.md               text
+*.txt              text
+
+# ---- ไฟล์ภาพ ----
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.psd  binary
+*.tga  binary
+*.tif  binary
+*.bmp  binary
+*.ico  binary
+*.exr  binary
+
+# ---- ไฟล์เสียง / วิดีโอ ----
+*.mp3  binary
+*.ogg  binary
+*.wav  binary
+*.aif  binary
+*.mp4  binary
+*.mov  binary
+
+# ---- ฟอนต์ / โมเดล / ไฟล์คอมไพล์แล้ว ----
+*.ttf  binary
+*.otf  binary
+*.fbx  binary
+*.obj  binary
+*.blend binary
+*.dll  binary
+*.pdb  binary
+*.unitypackage binary

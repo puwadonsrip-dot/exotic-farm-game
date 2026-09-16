@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cfc19abea8d4864ca74487d30a157a7, type: 3}
+  m_Name: Pumpkin
+  m_EditorClassIdentifier: Assembly-CSharp::CropData
+  cropId: pumpkin
+  displayName: "\u0E1F\u0E31\u0E01\u0E17\u0E2D\u0E07"
+  seedIcon: {fileID: 0}
+  produceIcon: {fileID: 0}
+  growthStageTiles:
+  - {fileID: 11400000, guid: f4de912f19c837b4084212b24f835d10, type: 2}
+  - {fileID: 11400000, guid: 2909caf9a142cba4ba6f201cb5e81da8, type: 2}
+  - {fileID: 11400000, guid: eca67cae9e079bf4091a484c03d39110, type: 2}
+  - {fileID: 11400000, guid: fd3aa104fe288704d96cdcb875db510a, type: 2}
+  daysToGrow: 3
+  seedItem: {fileID: 11400000, guid: 60618e9aa891a03498a2cc6c6cb2d66e, type: 2}
+  produceItem: {fileID: 11400000, guid: 9e61ec3c2a81133479baf19473a9ed7d, type: 2}
+  produceAmount: 1
+  sellPrice: 70
+  seedPrice: 25

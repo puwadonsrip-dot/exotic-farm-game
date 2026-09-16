@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 736f77d3371e904439c149f6b61dc94d, type: 3}
+  m_Name: Girasheep
+  m_EditorClassIdentifier: Assembly-CSharp::AnimalData
+  animalId: girasheep
+  displayName: "\u0E22\u0E35\u0E23\u0E32\u0E1F\u0E02\u0E19\u0E41\u0E01\u0E30"
+  frames:
+  - {fileID: 21300000, guid: 2e1137545e54b71488e1aabd91391b95, type: 3}
+  - {fileID: 21300000, guid: 249ef92a077f11d4cb6a1cea7afeb96b, type: 3}
+  - {fileID: 21300000, guid: 3be8a1077b12f3c4483b5b1b92b6e75d, type: 3}
+  scale: 1.45
+  walkFps: 6
+  idleFps: 2
+  moveSpeed: 0.8
+  restRange: {x: 1.5, y: 4.5}
+  hopHeight: 0.08
+  dailyIncome: 12
+  produceItem: {fileID: 11400000, guid: 799c6f07e6f40d345bd09a2ce7fc019a, type: 2}
+  daysPerProduce: 1
+  produceAmount: 1
+  producePrice: 12
+  buyPrice: 560
+  eggPrice: 320
+  eggItem: {fileID: 11400000, guid: 53a104aa6593b82408971bf10417c661, type: 2}
+  adultItem: {fileID: 11400000, guid: 61884ef931357f2479c2be5fbea0e22a, type: 2}
+  canBreed: 1
+  daysToAdult: 3
+  babyScale: 0.6
+  voiceClips: []

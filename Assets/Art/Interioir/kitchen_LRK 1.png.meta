@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: 95d6b9a10be67a6498da82409e380f48
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2937047162220651628
+    second: kitchen_LRK 1_0
+  - first:
+      213: 7543855328809997656
+    second: kitchen_LRK 1_1
+  - first:
+      213: -6046934153262940647
+    second: kitchen_LRK 1_2
+  - first:
+      213: -1955511895877587054
+    second: kitchen_LRK 1_3
+  - first:
+      213: 4608570129626487865
+    second: kitchen_LRK 1_4
+  - first:
+      213: 2244873602364985332
+    second: kitchen_LRK 1_5
+  - first:
+      213: 3716938647362324877
+    second: kitchen_LRK 1_6
+  - first:
+      213: -5157846245235159701
+    second: kitchen_LRK 1_7
+  - first:
+      213: -4376784859470361409
+    second: kitchen_LRK 1_8
+  - first:
+      213: 5739033446083229490
+    second: kitchen_LRK 1_9
+  - first:
+      213: -6450380344284501715
+    second: kitchen_LRK 1_10
+  - first:
+      213: -4777969735555703788
+    second: kitchen_LRK 1_11
+  - first:
+      213: 4158072536073215209
+    second: kitchen_LRK 1_12
+  - first:
+      213: -4454236599113755384
+    second: kitchen_LRK 1_13
+  - first:
+      213: -1304790808697961413
+    second: kitchen_LRK 1_14
+  - first:
+      213: -2496861813396504770
+    second: kitchen_LRK 1_15
+  - first:
+      213: -7926472106775923999
+    second: kitchen_LRK 1_16
+  - first:
+      213: -9191101021656919107
+    second: kitchen_LRK 1_17
+  - first:
+      213: 3983188297144639721
+    second: kitchen_LRK 1_18
+  - first:
+      213: 8970744201334834400
+    second: kitchen_LRK 1_19
+  - first:
+      213: -9134879937779743751
+    second: kitchen_LRK 1_20
+  - first:
+      213: 1975480648710693497
+    second: kitchen_LRK 1_21
+  - first:
+      213: -5692938607035275381
+    second: kitchen_LRK 1_22
+  - first:
+      213: -9118582355723533006
+    second: kitchen_LRK 1_23
+  - first:
+      213: -6960758806488078078
+    second: kitchen_LRK 1_24
+  - first:
+      213: 8145614301637342089
+    second: kitchen_LRK 1_25
+  - first:
+      213: 8004264909638327608
+    second: kitchen_LRK 1_26
+  - first:
+      213: 7916937325122657049
+    second: kitchen_LRK 1_27
+  - first:
+      213: 399466901727493493
+    second: kitchen_LRK 1_28
+  - first:
+      213: 1114866768293787800
+    second: kitchen_LRK 1_29
+  - first:
+      213: -4784397522069313366
+    second: kitchen_LRK 1_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kitchen_LRK 1_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 323
+        width: 147
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49bd447ca238d37d0800000000000000
+      internalID: -2937047162220651628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 367
+        width: 130
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85558a6d37821b860800000000000000
+      internalID: 7543855328809997656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_2
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 319
+        width: 26
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91eb596fc69f41ca0800000000000000
+      internalID: -6046934153262940647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_3
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 335
+        width: 130
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f6a2c9a40acd4e0800000000000000
+      internalID: -1955511895877587054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 277
+        width: 123
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93cdcda9d1ee4ff30800000000000000
+      internalID: 4608570129626487865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_5
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 277
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ffcd92c5a4672f10800000000000000
+      internalID: 2244873602364985332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_6
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 277
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d89c3ffa108359330800000000000000
+      internalID: 3716938647362324877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_7
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 277
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d0daada26ab68b0800000000000000
+      internalID: -5157846245235159701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_8
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 303
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc06f80c598243c0800000000000000
+      internalID: -4376784859470361409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_9
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 271
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23770e3338425af40800000000000000
+      internalID: 5739033446083229490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_10
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 239
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29a2c0a045ab76a0800000000000000
+      internalID: -6450380344284501715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_11
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 195
+        width: 147
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c92ac17dd31bdb0800000000000000
+      internalID: -4777969735555703788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_12
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 239
+        width: 130
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec93fee0f074b930800000000000000
+      internalID: 4158072536073215209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_13
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 207
+        width: 130
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 805d744a96f5f22c0800000000000000
+      internalID: -4454236599113755384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_14
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 159
+        width: 34
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b340d5d2ca374ede0800000000000000
+      internalID: -1304790808697961413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_15
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 149
+        width: 123
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f734fd86d595dd0800000000000000
+      internalID: -2496861813396504770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_16
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 149
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e234997d938ff190800000000000000
+      internalID: -7926472106775923999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_17
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 149
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db3d86d3156a27080800000000000000
+      internalID: -9191101021656919107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_18
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 149
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0acc407a0274730800000000000000
+      internalID: 3983188297144639721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_19
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 175
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e44573725c7e7c70800000000000000
+      internalID: 8970744201334834400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_20
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 143
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3cbc268136a3180800000000000000
+      internalID: -9134879937779743751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_21
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 67
+        width: 147
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9722f07fe215a6b10800000000000000
+      internalID: 1975480648710693497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_22
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 111
+        width: 130
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b872e87df7e9ef0b0800000000000000
+      internalID: -5692938607035275381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_23
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 79
+        width: 53
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23544f7e8a9447180800000000000000
+      internalID: -9118582355723533006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_24
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 79
+        width: 130
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2092b14ceba666f90800000000000000
+      internalID: -6960758806488078078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_25
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 21
+        width: 123
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9837f6ecc090b0170800000000000000
+      internalID: 8145614301637342089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_26
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 21
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ddd13e68cd41f60800000000000000
+      internalID: 8004264909638327608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_27
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 21
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b97fc2d8c9edd60800000000000000
+      internalID: 7916937325122657049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_28
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 21
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57d3ef8d7013b8500800000000000000
+      internalID: 399466901727493493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_29
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 47
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 898f9004b6dc87f00800000000000000
+      internalID: 1114866768293787800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kitchen_LRK 1_30
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 15
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa8acc07dc76a9db0800000000000000
+      internalID: -4784397522069313366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      kitchen_LRK 1_0: -2937047162220651628
+      kitchen_LRK 1_1: 7543855328809997656
+      kitchen_LRK 1_10: -6450380344284501715
+      kitchen_LRK 1_11: -4777969735555703788
+      kitchen_LRK 1_12: 4158072536073215209
+      kitchen_LRK 1_13: -4454236599113755384
+      kitchen_LRK 1_14: -1304790808697961413
+      kitchen_LRK 1_15: -2496861813396504770
+      kitchen_LRK 1_16: -7926472106775923999
+      kitchen_LRK 1_17: -9191101021656919107
+      kitchen_LRK 1_18: 3983188297144639721
+      kitchen_LRK 1_19: 8970744201334834400
+      kitchen_LRK 1_2: -6046934153262940647
+      kitchen_LRK 1_20: -9134879937779743751
+      kitchen_LRK 1_21: 1975480648710693497
+      kitchen_LRK 1_22: -5692938607035275381
+      kitchen_LRK 1_23: -9118582355723533006
+      kitchen_LRK 1_24: -6960758806488078078
+      kitchen_LRK 1_25: 8145614301637342089
+      kitchen_LRK 1_26: 8004264909638327608
+      kitchen_LRK 1_27: 7916937325122657049
+      kitchen_LRK 1_28: 399466901727493493
+      kitchen_LRK 1_29: 1114866768293787800
+      kitchen_LRK 1_3: -1955511895877587054
+      kitchen_LRK 1_30: -4784397522069313366
+      kitchen_LRK 1_4: 4608570129626487865
+      kitchen_LRK 1_5: 2244873602364985332
+      kitchen_LRK 1_6: 3716938647362324877
+      kitchen_LRK 1_7: -5157846245235159701
+      kitchen_LRK 1_8: -4376784859470361409
+      kitchen_LRK 1_9: 5739033446083229490
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

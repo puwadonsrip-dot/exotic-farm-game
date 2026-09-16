@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cfc19abea8d4864ca74487d30a157a7, type: 3}
+  m_Name: Carrot
+  m_EditorClassIdentifier: Assembly-CSharp::CropData
+  cropId: carrot
+  displayName: "\u0E41\u0E04\u0E23\u0E2D\u0E17"
+  seedIcon: {fileID: 0}
+  produceIcon: {fileID: 0}
+  growthStageTiles:
+  - {fileID: 11400000, guid: de7828fce327bb146aeb2c335cbecd4f, type: 2}
+  - {fileID: 11400000, guid: 9bb7dc62e8fd90c419758aa3ca0314e8, type: 2}
+  - {fileID: 11400000, guid: 6a1438b47bb1e9040a30ac33e7241297, type: 2}
+  - {fileID: 11400000, guid: 5b78db380aff26f4b9fe4a214c2f4880, type: 2}
+  daysToGrow: 3
+  seedItem: {fileID: 11400000, guid: 24febbd6839b6ea4e98c9bd75ee581bc, type: 2}
+  produceItem: {fileID: 11400000, guid: f1479d1abeeda584ea09abebbea1133e, type: 2}
+  produceAmount: 1
+  sellPrice: 30
+  seedPrice: 10

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cfc19abea8d4864ca74487d30a157a7, type: 3}
+  m_Name: Tomato
+  m_EditorClassIdentifier: Assembly-CSharp::CropData
+  cropId: tomato
+  displayName: "\u0E21\u0E30\u0E40\u0E02\u0E37\u0E2D\u0E40\u0E17\u0E28"
+  seedIcon: {fileID: 0}
+  produceIcon: {fileID: 0}
+  growthStageTiles:
+  - {fileID: 11400000, guid: 377ec87dc08781143a1981ec1ee5bfb8, type: 2}
+  - {fileID: 11400000, guid: 797993a12d7577b4bb3ec4be4c7af950, type: 2}
+  - {fileID: 11400000, guid: 41401cf36264b9543acb0f100c52cd2c, type: 2}
+  - {fileID: 11400000, guid: 5f680af303d903e48973149407cb4729, type: 2}
+  daysToGrow: 3
+  seedItem: {fileID: 11400000, guid: 799c6f07e6f40d345bd09a2ce7fc019a, type: 2}
+  produceItem: {fileID: 11400000, guid: 0f7ca6d1778d8e84cab011139e83d336, type: 2}
+  produceAmount: 1
+  sellPrice: 38
+  seedPrice: 12

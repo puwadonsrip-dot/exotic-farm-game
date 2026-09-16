@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cfc19abea8d4864ca74487d30a157a7, type: 3}
+  m_Name: Wheat
+  m_EditorClassIdentifier: Assembly-CSharp::CropData
+  cropId: wheat
+  displayName: "\u0E02\u0E49\u0E32\u0E27\u0E2A\u0E32\u0E25\u0E35"
+  seedIcon: {fileID: 0}
+  produceIcon: {fileID: 0}
+  growthStageTiles:
+  - {fileID: 11400000, guid: 0b9b3a06a0e99bf40bc7f1642fd21c6d, type: 2}
+  - {fileID: 11400000, guid: 134556bf22d78b642980b5a861062c15, type: 2}
+  - {fileID: 11400000, guid: ca629c9e20eacaf4bbd1a0597ab4d175, type: 2}
+  - {fileID: 11400000, guid: 8db10b5dd2638264fa876578ea1dbdc6, type: 2}
+  daysToGrow: 3
+  seedItem: {fileID: 11400000, guid: 674989537f5b70d409aff3b8111f69ef, type: 2}
+  produceItem: {fileID: 11400000, guid: ba331408c1f66c44e8faf67fdbf566f8, type: 2}
+  produceAmount: 1
+  sellPrice: 25
+  seedPrice: 8

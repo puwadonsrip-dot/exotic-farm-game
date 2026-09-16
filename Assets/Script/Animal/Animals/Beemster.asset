@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 736f77d3371e904439c149f6b61dc94d, type: 3}
+  m_Name: Beemster
+  m_EditorClassIdentifier: Assembly-CSharp::AnimalData
+  animalId: beemster
+  displayName: "\u0E41\u0E2E\u0E21\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E1C\u0E36\u0E49\u0E07"
+  frames:
+  - {fileID: 21300000, guid: c70ffb96b3c9a0543a7b9fa3048499ca, type: 3}
+  - {fileID: 21300000, guid: 90d5359ce0f628240abe477e234e9872, type: 3}
+  - {fileID: 21300000, guid: 87f0f2a1c91109c4c9b3667beec07973, type: 3}
+  scale: 0.85
+  walkFps: 6
+  idleFps: 2
+  moveSpeed: 0.8
+  restRange: {x: 1.5, y: 4.5}
+  hopHeight: 0.08
+  dailyIncome: 15
+  produceItem: {fileID: 11400000, guid: c8ab718637b6b2c45bbdece3ac7e6fd7, type: 2}
+  daysPerProduce: 1
+  produceAmount: 1
+  producePrice: 15
+  buyPrice: 680
+  eggPrice: 390
+  eggItem: {fileID: 11400000, guid: 991781a9cf6a5184bbbef8d8deb7d233, type: 2}
+  adultItem: {fileID: 11400000, guid: 31f46dd053fff164789b9a73872cd61d, type: 2}
+  canBreed: 1
+  daysToAdult: 3
+  babyScale: 0.6
+  voiceClips: []

@@ -1,0 +1,2249 @@
+fileFormatVersion: 2
+guid: 57535a23b44f5244fbeb2dd8f4f2a5c5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4713561857509363456
+    second: livingroom_LRK 1_0
+  - first:
+      213: -3976996032657295919
+    second: livingroom_LRK 1_1
+  - first:
+      213: -8781894175595294267
+    second: livingroom_LRK 1_2
+  - first:
+      213: 3797506316386462630
+    second: livingroom_LRK 1_3
+  - first:
+      213: 8137437912931110530
+    second: livingroom_LRK 1_4
+  - first:
+      213: -8361017905025407934
+    second: livingroom_LRK 1_5
+  - first:
+      213: -8257482246332759618
+    second: livingroom_LRK 1_6
+  - first:
+      213: -6951668491034975479
+    second: livingroom_LRK 1_7
+  - first:
+      213: -8090824782090633217
+    second: livingroom_LRK 1_8
+  - first:
+      213: -4766425822250431360
+    second: livingroom_LRK 1_9
+  - first:
+      213: -473300866903348334
+    second: livingroom_LRK 1_10
+  - first:
+      213: 5120525724818857988
+    second: livingroom_LRK 1_11
+  - first:
+      213: -1456458833532135878
+    second: livingroom_LRK 1_12
+  - first:
+      213: -9184575086640686572
+    second: livingroom_LRK 1_13
+  - first:
+      213: 3430060757966375249
+    second: livingroom_LRK 1_14
+  - first:
+      213: 9137542876296971052
+    second: livingroom_LRK 1_15
+  - first:
+      213: 1933925322374823697
+    second: livingroom_LRK 1_16
+  - first:
+      213: -2632518552631990853
+    second: livingroom_LRK 1_17
+  - first:
+      213: 531801341022538419
+    second: livingroom_LRK 1_18
+  - first:
+      213: 2267448151195361917
+    second: livingroom_LRK 1_19
+  - first:
+      213: -857377256073321700
+    second: livingroom_LRK 1_20
+  - first:
+      213: -4394900346372791327
+    second: livingroom_LRK 1_21
+  - first:
+      213: -1063148416447303208
+    second: livingroom_LRK 1_22
+  - first:
+      213: 5235527560952203503
+    second: livingroom_LRK 1_23
+  - first:
+      213: -7499746469604543389
+    second: livingroom_LRK 1_24
+  - first:
+      213: -2525704267499914897
+    second: livingroom_LRK 1_25
+  - first:
+      213: 2577028667324069274
+    second: livingroom_LRK 1_26
+  - first:
+      213: 5992867073499439982
+    second: livingroom_LRK 1_27
+  - first:
+      213: -6904289268725632187
+    second: livingroom_LRK 1_28
+  - first:
+      213: 429197589119232635
+    second: livingroom_LRK 1_29
+  - first:
+      213: 5354628952221346372
+    second: livingroom_LRK 1_30
+  - first:
+      213: 6347095686950568968
+    second: livingroom_LRK 1_31
+  - first:
+      213: -915620093342108480
+    second: livingroom_LRK 1_32
+  - first:
+      213: 4266423139120713621
+    second: livingroom_LRK 1_33
+  - first:
+      213: 3733146298219577745
+    second: livingroom_LRK 1_34
+  - first:
+      213: -2901856971624158253
+    second: livingroom_LRK 1_35
+  - first:
+      213: -7557535155145515341
+    second: livingroom_LRK 1_36
+  - first:
+      213: -2373751003031358003
+    second: livingroom_LRK 1_37
+  - first:
+      213: -3226054353172836178
+    second: livingroom_LRK 1_38
+  - first:
+      213: -1887843679052554075
+    second: livingroom_LRK 1_39
+  - first:
+      213: -1928412560767700151
+    second: livingroom_LRK 1_40
+  - first:
+      213: -3668574622871992488
+    second: livingroom_LRK 1_41
+  - first:
+      213: 8813511763718830780
+    second: livingroom_LRK 1_42
+  - first:
+      213: 2719298542479594326
+    second: livingroom_LRK 1_43
+  - first:
+      213: 4185755506539252215
+    second: livingroom_LRK 1_44
+  - first:
+      213: -3963143339620659564
+    second: livingroom_LRK 1_45
+  - first:
+      213: -6209429268895753669
+    second: livingroom_LRK 1_46
+  - first:
+      213: -7928412815052619432
+    second: livingroom_LRK 1_47
+  - first:
+      213: -4495581507857010194
+    second: livingroom_LRK 1_48
+  - first:
+      213: 2631657930538678750
+    second: livingroom_LRK 1_49
+  - first:
+      213: 5704384771577101750
+    second: livingroom_LRK 1_50
+  - first:
+      213: -2024154144496117693
+    second: livingroom_LRK 1_51
+  - first:
+      213: -600986073209522829
+    second: livingroom_LRK 1_52
+  - first:
+      213: -6487258302810358514
+    second: livingroom_LRK 1_53
+  - first:
+      213: 985165606773240326
+    second: livingroom_LRK 1_54
+  - first:
+      213: 651888949784906252
+    second: livingroom_LRK 1_55
+  - first:
+      213: 1733133139213113639
+    second: livingroom_LRK 1_56
+  - first:
+      213: 5265198624890191279
+    second: livingroom_LRK 1_57
+  - first:
+      213: 5256866480129819804
+    second: livingroom_LRK 1_58
+  - first:
+      213: 4051352180240628030
+    second: livingroom_LRK 1_59
+  - first:
+      213: 8580695150592052561
+    second: livingroom_LRK 1_60
+  - first:
+      213: 1932194450917688123
+    second: livingroom_LRK 1_61
+  - first:
+      213: 3002708843833735397
+    second: livingroom_LRK 1_62
+  - first:
+      213: 5192278573501549685
+    second: livingroom_LRK 1_63
+  - first:
+      213: 1936055818909238934
+    second: livingroom_LRK 1_64
+  - first:
+      213: -7535694094077883388
+    second: livingroom_LRK 1_65
+  - first:
+      213: -660956773176987732
+    second: livingroom_LRK 1_66
+  - first:
+      213: -8894801645623987218
+    second: livingroom_LRK 1_67
+  - first:
+      213: -7773581663656040016
+    second: livingroom_LRK 1_68
+  - first:
+      213: -2955121077674449380
+    second: livingroom_LRK 1_69
+  - first:
+      213: 751917076989722539
+    second: livingroom_LRK 1_70
+  - first:
+      213: 89935234640192457
+    second: livingroom_LRK 1_71
+  - first:
+      213: -9184402194654372798
+    second: livingroom_LRK 1_72
+  - first:
+      213: 3317367408896078707
+    second: livingroom_LRK 1_73
+  - first:
+      213: 3121008313284622528
+    second: livingroom_LRK 1_74
+  - first:
+      213: -4695397893462401323
+    second: livingroom_LRK 1_75
+  - first:
+      213: -7232487298037888411
+    second: livingroom_LRK 1_76
+  - first:
+      213: -7940689215634500144
+    second: livingroom_LRK 1_77
+  - first:
+      213: 5571683600705651439
+    second: livingroom_LRK 1_78
+  - first:
+      213: -5500715734964364838
+    second: livingroom_LRK 1_79
+  - first:
+      213: -6093115584039207007
+    second: livingroom_LRK 1_80
+  - first:
+      213: 5799322694433392266
+    second: livingroom_LRK 1_81
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: livingroom_LRK 1_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 351
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f0daf298fe96140800000000000000
+      internalID: 4713561857509363456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 351
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5f258ed2fdec8c0800000000000000
+      internalID: -3976996032657295919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 351
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c1129896c1702680800000000000000
+      internalID: -8781894175595294267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_3
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 351
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab648cefd373b430800000000000000
+      internalID: 3797506316386462630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_4
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 351
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28e0e06faacfde070800000000000000
+      internalID: 8137437912931110530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_5
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 351
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 244a7429382b7fb80800000000000000
+      internalID: -8361017905025407934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_6
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 350
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb1cd30a5a7876d80800000000000000
+      internalID: -8257482246332759618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 350
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 903a593c656b68f90800000000000000
+      internalID: -6951668491034975479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_8
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 351
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff7f8b4abd97bf80800000000000000
+      internalID: -8090824782090633217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_9
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 351
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c8380e7f04addb0800000000000000
+      internalID: -4766425822250431360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_10
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 351
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b67548e5f7e69f0800000000000000
+      internalID: -473300866903348334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_11
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 351
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 400e31b5403cf0740800000000000000
+      internalID: 5120525724818857988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 287
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a365655586e99cbe0800000000000000
+      internalID: -1456458833532135878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_13
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 287
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a11e3ee95d98080800000000000000
+      internalID: -9184575086640686572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_14
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 287
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 159c79c06160a9f20800000000000000
+      internalID: 3430060757966375249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_15
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 287
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c23059d45d21fce70800000000000000
+      internalID: 9137542876296971052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_16
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 287
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11fb84695dea6da10800000000000000
+      internalID: 1933925322374823697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_17
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 287
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb5aeb5f25a677bd0800000000000000
+      internalID: -2632518552631990853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_18
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 287
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ba89b68086516700800000000000000
+      internalID: 531801341022538419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 287
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72ad9e7418977f10800000000000000
+      internalID: 2267448151195361917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_20
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 287
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13204d9debf914f0800000000000000
+      internalID: -857377256073321700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_21
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 287
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e3653f8b6d2203c0800000000000000
+      internalID: -4394900346372791327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_22
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 287
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1b326e520fe31f0800000000000000
+      internalID: -1063148416447303208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_23
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 287
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8c252e39458a840800000000000000
+      internalID: 5235527560952203503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_24
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 223
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3643bbd325c8be790800000000000000
+      internalID: -7499746469604543389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_25
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 223
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f69baf7b955e2fcd0800000000000000
+      internalID: -2525704267499914897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_26
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 239
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9579d35be173c320800000000000000
+      internalID: 2577028667324069274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_27
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 239
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e63a11e0ad0fa2350800000000000000
+      internalID: 5992867073499439982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_28
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 239
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54331179d790f20a0800000000000000
+      internalID: -6904289268725632187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_29
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 239
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ae7edeee0d4f500800000000000000
+      internalID: 429197589119232635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_30
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 239
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44aec2979a67f4a40800000000000000
+      internalID: 5354628952221346372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_31
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 239
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8044a1026e9651850800000000000000
+      internalID: 6347095686950568968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_32
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 223
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4322350601b43f0800000000000000
+      internalID: -915620093342108480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_33
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 223
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f0cc49d31653b30800000000000000
+      internalID: 4266423139120713621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_34
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 239
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19141f777cccec330800000000000000
+      internalID: 3733146298219577745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_35
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 239
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dbe95185788ab7d0800000000000000
+      internalID: -2901856971624158253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_36
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 239
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be560461dd3e1790800000000000000
+      internalID: -7557535155145515341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_37
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 239
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc5b6171a0ebe0fd0800000000000000
+      internalID: -2373751003031358003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_38
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 239
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea0d70d78a0ca33d0800000000000000
+      internalID: -3226054353172836178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_39
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 239
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a02b961d280dc5e0800000000000000
+      internalID: -1887843679052554075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_40
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 214
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9433a0f3ef6ec35e0800000000000000
+      internalID: -1928412560767700151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_41
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 217
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 857c3b341da961dc0800000000000000
+      internalID: -3668574622871992488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_42
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 175
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbaff2cc042ef4a70800000000000000
+      internalID: 8813511763718830780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_43
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 175
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 653dbbeed93ecb520800000000000000
+      internalID: 2719298542479594326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_44
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 175
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f948e3c47ac61a30800000000000000
+      internalID: 4185755506539252215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_45
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 175
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e84f751261009c0800000000000000
+      internalID: -3963143339620659564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_46
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 175
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a1e899afca3d9a0800000000000000
+      internalID: -6209429268895753669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_47
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 175
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851422e1d8e98f190800000000000000
+      internalID: -7928412815052619432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_48
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 175
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee13e5def6c7c91c0800000000000000
+      internalID: -4495581507857010194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_49
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 175
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed9f818d1f6858420800000000000000
+      internalID: 2631657930538678750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_50
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 175
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd30040abb0a2f40800000000000000
+      internalID: 5704384771577101750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_51
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 175
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3489caea782c8e3e0800000000000000
+      internalID: -2024154144496117693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_52
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 175
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 375b36fb95ed8a7f0800000000000000
+      internalID: -600986073209522829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_53
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 175
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0df8cec1f0a8f5a0800000000000000
+      internalID: -6487258302810358514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_54
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 175
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 602b6a456e20cad00800000000000000
+      internalID: 985165606773240326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_55
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 175
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a8ee4cb89fb0900800000000000000
+      internalID: 651888949784906252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_56
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 182
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729514758635d0810800000000000000
+      internalID: 1733133139213113639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_57
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 185
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad747cc04eb11940800000000000000
+      internalID: 5265198624890191279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_58
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 127
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c94cbcb263424f840800000000000000
+      internalID: 5256866480129819804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_59
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 95
+        width: 34
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e393f3bc75b493830800000000000000
+      internalID: 4051352180240628030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_60
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 127
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15dc4f8e6c0c41770800000000000000
+      internalID: 8580695150592052561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_61
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 95
+        width: 34
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b330eebad9880da10800000000000000
+      internalID: 1932194450917688123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_62
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 95
+        width: 18
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e832a0d8c3cba920800000000000000
+      internalID: 3002708843833735397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_63
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 95
+        width: 18
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c8e6c4addae0840800000000000000
+      internalID: 5192278573501549685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_64
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 143
+        width: 66
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 696c96772804eda10800000000000000
+      internalID: 1936055818909238934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_65
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 127
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40c8a72b526db6790800000000000000
+      internalID: -7535694094077883388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_66
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 150
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cafa5e2115fc3d6f0800000000000000
+      internalID: -660956773176987732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_67
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 153
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3b50da7015f8480800000000000000
+      internalID: -8894801645623987218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_68
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 111
+        width: 66
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b9aa41c9a0be1490800000000000000
+      internalID: -7773581663656040016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_69
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 99
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c16e1f8690d4df6d0800000000000000
+      internalID: -2955121077674449380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_70
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 47
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bafb58209985f6a00800000000000000
+      internalID: 751917076989722539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_71
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 15
+        width: 34
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c325819e938f3100800000000000000
+      internalID: 89935234640192457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_72
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 47
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24cde417dd27a8080800000000000000
+      internalID: -9184402194654372798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_73
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 15
+        width: 34
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37375bc0518a90e20800000000000000
+      internalID: 3317367408896078707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_74
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 31
+        width: 12
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c8fe5e668c005b20800000000000000
+      internalID: 3121008313284622528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_75
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 31
+        width: 12
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de5e014e7896deb0800000000000000
+      internalID: -4695397893462401323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_76
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 59
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56a4ded2f1b01ab90800000000000000
+      internalID: -7232487298037888411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_77
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 53
+        width: 38
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5945eda310dc190800000000000000
+      internalID: -7940689215634500144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_78
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 63
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe20eecf6b8925d40800000000000000
+      internalID: 5571683600705651439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_79
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 27
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad91c0fde2889a3b0800000000000000
+      internalID: -5500715734964364838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_80
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 21
+        width: 38
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af32f5b8a7e07ba0800000000000000
+      internalID: -6093115584039207007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: livingroom_LRK 1_81
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 34
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a864093b3455b7050800000000000000
+      internalID: 5799322694433392266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      livingroom_LRK 1_0: 4713561857509363456
+      livingroom_LRK 1_1: -3976996032657295919
+      livingroom_LRK 1_10: -473300866903348334
+      livingroom_LRK 1_11: 5120525724818857988
+      livingroom_LRK 1_12: -1456458833532135878
+      livingroom_LRK 1_13: -9184575086640686572
+      livingroom_LRK 1_14: 3430060757966375249
+      livingroom_LRK 1_15: 9137542876296971052
+      livingroom_LRK 1_16: 1933925322374823697
+      livingroom_LRK 1_17: -2632518552631990853
+      livingroom_LRK 1_18: 531801341022538419
+      livingroom_LRK 1_19: 2267448151195361917
+      livingroom_LRK 1_2: -8781894175595294267
+      livingroom_LRK 1_20: -857377256073321700
+      livingroom_LRK 1_21: -4394900346372791327
+      livingroom_LRK 1_22: -1063148416447303208
+      livingroom_LRK 1_23: 5235527560952203503
+      livingroom_LRK 1_24: -7499746469604543389
+      livingroom_LRK 1_25: -2525704267499914897
+      livingroom_LRK 1_26: 2577028667324069274
+      livingroom_LRK 1_27: 5992867073499439982
+      livingroom_LRK 1_28: -6904289268725632187
+      livingroom_LRK 1_29: 429197589119232635
+      livingroom_LRK 1_3: 3797506316386462630
+      livingroom_LRK 1_30: 5354628952221346372
+      livingroom_LRK 1_31: 6347095686950568968
+      livingroom_LRK 1_32: -915620093342108480
+      livingroom_LRK 1_33: 4266423139120713621
+      livingroom_LRK 1_34: 3733146298219577745
+      livingroom_LRK 1_35: -2901856971624158253
+      livingroom_LRK 1_36: -7557535155145515341
+      livingroom_LRK 1_37: -2373751003031358003
+      livingroom_LRK 1_38: -3226054353172836178
+      livingroom_LRK 1_39: -1887843679052554075
+      livingroom_LRK 1_4: 8137437912931110530
+      livingroom_LRK 1_40: -1928412560767700151
+      livingroom_LRK 1_41: -3668574622871992488
+      livingroom_LRK 1_42: 8813511763718830780
+      livingroom_LRK 1_43: 2719298542479594326
+      livingroom_LRK 1_44: 4185755506539252215
+      livingroom_LRK 1_45: -3963143339620659564
+      livingroom_LRK 1_46: -6209429268895753669
+      livingroom_LRK 1_47: -7928412815052619432
+      livingroom_LRK 1_48: -4495581507857010194
+      livingroom_LRK 1_49: 2631657930538678750
+      livingroom_LRK 1_5: -8361017905025407934
+      livingroom_LRK 1_50: 5704384771577101750
+      livingroom_LRK 1_51: -2024154144496117693
+      livingroom_LRK 1_52: -600986073209522829
+      livingroom_LRK 1_53: -6487258302810358514
+      livingroom_LRK 1_54: 985165606773240326
+      livingroom_LRK 1_55: 651888949784906252
+      livingroom_LRK 1_56: 1733133139213113639
+      livingroom_LRK 1_57: 5265198624890191279
+      livingroom_LRK 1_58: 5256866480129819804
+      livingroom_LRK 1_59: 4051352180240628030
+      livingroom_LRK 1_6: -8257482246332759618
+      livingroom_LRK 1_60: 8580695150592052561
+      livingroom_LRK 1_61: 1932194450917688123
+      livingroom_LRK 1_62: 3002708843833735397
+      livingroom_LRK 1_63: 5192278573501549685
+      livingroom_LRK 1_64: 1936055818909238934
+      livingroom_LRK 1_65: -7535694094077883388
+      livingroom_LRK 1_66: -660956773176987732
+      livingroom_LRK 1_67: -8894801645623987218
+      livingroom_LRK 1_68: -7773581663656040016
+      livingroom_LRK 1_69: -2955121077674449380
+      livingroom_LRK 1_7: -6951668491034975479
+      livingroom_LRK 1_70: 751917076989722539
+      livingroom_LRK 1_71: 89935234640192457
+      livingroom_LRK 1_72: -9184402194654372798
+      livingroom_LRK 1_73: 3317367408896078707
+      livingroom_LRK 1_74: 3121008313284622528
+      livingroom_LRK 1_75: -4695397893462401323
+      livingroom_LRK 1_76: -7232487298037888411
+      livingroom_LRK 1_77: -7940689215634500144
+      livingroom_LRK 1_78: 5571683600705651439
+      livingroom_LRK 1_79: -5500715734964364838
+      livingroom_LRK 1_8: -8090824782090633217
+      livingroom_LRK 1_80: -6093115584039207007
+      livingroom_LRK 1_81: 5799322694433392266
+      livingroom_LRK 1_9: -4766425822250431360
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

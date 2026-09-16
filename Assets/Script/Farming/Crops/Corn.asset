@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cfc19abea8d4864ca74487d30a157a7, type: 3}
+  m_Name: Corn
+  m_EditorClassIdentifier: Assembly-CSharp::CropData
+  cropId: corn
+  displayName: "\u0E02\u0E49\u0E32\u0E27\u0E42\u0E1E\u0E14"
+  seedIcon: {fileID: 0}
+  produceIcon: {fileID: 0}
+  growthStageTiles:
+  - {fileID: 11400000, guid: d43d77efcf0ab72419c5ef4741f584c6, type: 2}
+  - {fileID: 11400000, guid: dc8cc963a0d1ea243af6a953f029f9f4, type: 2}
+  - {fileID: 11400000, guid: 890cf358209e6b944927b285251fb90a, type: 2}
+  - {fileID: 11400000, guid: 3d3bf2998a9749149abdebe962da38c5, type: 2}
+  daysToGrow: 3
+  seedItem: {fileID: 11400000, guid: c8ab718637b6b2c45bbdece3ac7e6fd7, type: 2}
+  produceItem: {fileID: 11400000, guid: ea651befbdbd21f43bc828a07a0e845a, type: 2}
+  produceAmount: 1
+  sellPrice: 45
+  seedPrice: 15

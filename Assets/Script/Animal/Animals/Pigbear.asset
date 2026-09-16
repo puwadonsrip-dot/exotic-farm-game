@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 736f77d3371e904439c149f6b61dc94d, type: 3}
+  m_Name: Pigbear
+  m_EditorClassIdentifier: Assembly-CSharp::AnimalData
+  animalId: pigbear
+  displayName: "\u0E2B\u0E21\u0E39\u0E2B\u0E21\u0E35"
+  frames:
+  - {fileID: 21300000, guid: 39ee37f02da8f864ea63de97c589d0ad, type: 3}
+  - {fileID: 21300000, guid: 8ec124cf6be7b8649b4e5e29ceb8de4f, type: 3}
+  - {fileID: 21300000, guid: 358bf4a975dfa5e499bd7f567feda4fa, type: 3}
+  scale: 1.3
+  walkFps: 6
+  idleFps: 2
+  moveSpeed: 0.8
+  restRange: {x: 1.5, y: 4.5}
+  hopHeight: 0.08
+  dailyIncome: 10
+  produceItem: {fileID: 11400000, guid: 24febbd6839b6ea4e98c9bd75ee581bc, type: 2}
+  daysPerProduce: 1
+  produceAmount: 1
+  producePrice: 10
+  buyPrice: 420
+  eggPrice: 240
+  eggItem: {fileID: 11400000, guid: 5d6f2e51b12b3224c9baa458a9661e06, type: 2}
+  adultItem: {fileID: 11400000, guid: e0657b82603baba4f8e9c8a04bfa1f1f, type: 2}
+  canBreed: 1
+  daysToAdult: 3
+  babyScale: 0.6
+  voiceClips: []

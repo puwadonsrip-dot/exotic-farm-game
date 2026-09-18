@@ -112,6 +112,14 @@ public class ItemDragHandler : MonoBehaviour,
         int count = inv.CountAt(slotIndex);
         if (item == null || count <= 0) return;
 
+        // สัตว์กับไข่ไม่ใช่ของที่โยนทิ้งบนพื้นเฉยๆ — ถามก่อนว่าจะเอามาเลี้ยงหรือทิ้ง
+        var manager = AnimalManager.Instance;
+        if (manager != null && manager.FindByItem(item, out _) != null)
+        {
+            InventoryUI.Instance?.AskAnimal(slotIndex);
+            return;
+        }
+
         var playerGO = GameObject.FindGameObjectWithTag("Player");
         if (playerGO == null)
         {

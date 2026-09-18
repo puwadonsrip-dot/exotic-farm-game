@@ -299,6 +299,14 @@ public static class FarmingSetupWizard
         // ---------- 6.5 Quest + NPC + กล่องบทสนทนา ----------
         SetupQuestAndNPC(log, allItems);
 
+        // ตรงนี้ SetupAnimals เพิ่งเติมไข่กับตัวสัตว์ลงในรายการไปหมาดๆ
+        // ต้องยัดกลับเข้า InventorySystem แล้วสั่งเซฟอีกรอบ
+        // ไม่งั้นรายการที่ถูกบันทึกลงซีนจะเป็นของก่อนหน้าที่ยังไม่มีสัตว์
+        Undo.RecordObject(inv, "Setup Inventory Items");
+        inv.allItems = new List<ItemData>(allItems);
+        EditorUtility.SetDirty(inv);
+        log.Add($"รายชื่อไอเทมทั้งหมด {inv.allItems.Count} ชิ้น (รวมไข่และตัวสัตว์แล้ว)");
+
         // ---------- 7. Script บน Player ----------
         var player = GameObject.FindGameObjectWithTag("Player");
         if (player == null)
@@ -1005,6 +1013,12 @@ public static class FarmingSetupWizard
             animal.eggItem = egg;
             animal.adultItem = adult;
             EditorUtility.SetDirty(animal);
+
+            // ต้องอยู่ในรายชื่อไอเทมทั้งหมดด้วย ไม่งั้น:
+            //   - ตอนโหลดเซฟจะหาไข่/สัตว์ในกระเป๋าไม่เจอ แล้วของหายไปเฉยๆ
+            //   - โหมดเจ้าของเกมเสกออกมาไม่ได้
+            if (egg != null && !allItems.Contains(egg)) allItems.Add(egg);
+            if (adult != null && !allItems.Contains(adult)) allItems.Add(adult);
 
             assets.Add(animal);
         }

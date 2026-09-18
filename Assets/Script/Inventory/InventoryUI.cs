@@ -92,10 +92,13 @@ public class InventoryUI : MonoBehaviour
     private readonly List<Image> m_BagTabImages = new List<Image>();
     private readonly List<int> m_FilteredSlots = new List<int>();
 
-    // ---- ถังขยะ ----
+    // ---- หน้าต่างถาม (ใช้ทั้งตอนทิ้งของและตอนปล่อยสัตว์ลงคอก) ----
     private GameObject m_TrashConfirm;
     private Text m_TrashText;
     private int m_PendingTrashSlot = -1;
+
+    private Button m_BtnPlace, m_BtnTrash, m_BtnCancel;
+    private Text m_BtnPlaceLabel, m_BtnTrashLabel, m_BtnCancelLabel;
 
     private void Start()
     {
@@ -423,16 +426,18 @@ public class InventoryUI : MonoBehaviour
         msgRT.offsetMin = new Vector2(24f, 0f);
         msgRT.offsetMax = new Vector2(-24f, -20f);
 
-        MakeConfirmButton(box.transform, "ทิ้งเลย", new Color(0.62f, 0.22f, 0.23f, 1f),
-                          -160f, ConfirmTrash);
-        MakeConfirmButton(box.transform, "ไม่ทิ้ง", new Color(0.26f, 0.26f, 0.28f, 1f),
-                          160f, CancelTrash);
+        m_BtnPlace = MakeConfirmButton(box.transform, new Color(0.28f, 0.52f, 0.30f, 1f),
+                                       ConfirmPlaceAnimal, out m_BtnPlaceLabel);
+        m_BtnTrash = MakeConfirmButton(box.transform, new Color(0.62f, 0.22f, 0.23f, 1f),
+                                       ConfirmTrash, out m_BtnTrashLabel);
+        m_BtnCancel = MakeConfirmButton(box.transform, new Color(0.26f, 0.26f, 0.28f, 1f),
+                                        CloseConfirm, out m_BtnCancelLabel);
 
         m_TrashConfirm.SetActive(false);
     }
 
-    private void MakeConfirmButton(Transform parent, string label, Color color,
-                                   float x, UnityEngine.Events.UnityAction action)
+    private Button MakeConfirmButton(Transform parent, Color color,
+                                     UnityEngine.Events.UnityAction action, out Text label)
     {
         var go = new GameObject("Button", typeof(RectTransform));
         go.transform.SetParent(parent, false);
@@ -445,21 +450,31 @@ public class InventoryUI : MonoBehaviour
         var rt = (RectTransform)go.transform;
         rt.anchorMin = rt.anchorMax = new Vector2(0.5f, 0f);
         rt.pivot = new Vector2(0.5f, 0f);
-        rt.anchoredPosition = new Vector2(x, 28f);
-        rt.sizeDelta = new Vector2(260f, 68f);
+        rt.anchoredPosition = new Vector2(0f, 28f);
+        rt.sizeDelta = new Vector2(250f, 68f);
 
         var button = go.AddComponent<Button>();
         button.targetGraphic = image;
         button.onClick.AddListener(action);
 
-        var text = CreateText(go.transform, "Label", 30, TextAnchor.MiddleCenter);
-        text.text = label;
-        var textRT = text.rectTransform;
+        label = CreateText(go.transform, "Label", 29, TextAnchor.MiddleCenter);
+        var textRT = label.rectTransform;
         textRT.anchorMin = Vector2.zero;
         textRT.anchorMax = Vector2.one;
         textRT.offsetMin = Vector2.zero;
         textRT.offsetMax = Vector2.zero;
+
+        return button;
     }
+
+    private static void PlaceButton(Button button, string label, Text labelText, float x)
+    {
+        button.gameObject.SetActive(true);
+        labelText.text = label;
+        ((RectTransform)button.transform).anchoredPosition = new Vector2(x, 28f);
+    }
+
+    // ---- ลากของมาทิ้งถังขยะ ----
 
     /// <summary>ตัวลากของเรียกเข้ามาเมื่อปล่อยของลงถังขยะ</summary>
     public void AskTrash(int slotIndex)
@@ -477,6 +492,76 @@ public class InventoryUI : MonoBehaviour
             ? $"ทิ้ง {item.displayName} x{count} ทั้งกองเลยไหม\n\nทิ้งแล้วเอาคืนไม่ได้"
             : $"ทิ้ง {item.displayName} เลยไหม\n\nทิ้งแล้วเอาคืนไม่ได้";
 
+        m_BtnPlace.gameObject.SetActive(false);
+        PlaceButton(m_BtnTrash, "ทิ้งเลย", m_BtnTrashLabel, -150f);
+        PlaceButton(m_BtnCancel, "ไม่ทิ้ง", m_BtnCancelLabel, 150f);
+
+        ShowConfirm();
+    }
+
+    // ---- ลากสัตว์หรือไข่ออกจากกระเป๋า ----
+
+    /// <summary>
+    /// ถามว่าจะเอาสัตว์ออกมาเลี้ยงหรือทิ้ง
+    ///
+    /// สัตว์กับไข่ต่างจากของอื่นตรงที่วางลงพื้นเฉยๆ ไม่ได้ ต้องปล่อยเข้าคอกให้มันใช้ชีวิต
+    /// </summary>
+    public void AskAnimal(int slotIndex)
+    {
+        var inv = InventorySystem.Instance;
+        var manager = AnimalManager.Instance;
+        if (inv == null || manager == null || m_TrashConfirm == null) return;
+
+        var item = inv.ItemAt(slotIndex);
+        if (item == null) return;
+
+        var animal = manager.FindByItem(item, out bool asAdult);
+        if (animal == null) return;
+
+        m_PendingTrashSlot = slotIndex;
+
+        m_TrashText.text = asAdult
+            ? $"{animal.displayName}  (ตัวโตเต็มวัย)\n\nจะปล่อยลงคอกให้ใช้ชีวิตเลยไหม"
+            : $"ไข่{animal.displayName}\n\nวางลงคอกแล้วจะฟักออกมาเป็นตัวเล็ก";
+
+        PlaceButton(m_BtnPlace, "วางเลี้ยง", m_BtnPlaceLabel, -230f);
+        PlaceButton(m_BtnTrash, "ทิ้ง", m_BtnTrashLabel, 0f);
+        PlaceButton(m_BtnCancel, "ยกเลิก", m_BtnCancelLabel, 230f);
+
+        ShowConfirm();
+    }
+
+    /// <summary>ปล่อยสัตว์ลงคอก — ไข่ออกมาเป็นตัวเล็ก ตัวโตออกมาโตเลย</summary>
+    private void ConfirmPlaceAnimal()
+    {
+        var inv = InventorySystem.Instance;
+        var manager = AnimalManager.Instance;
+
+        if (inv != null && manager != null && m_PendingTrashSlot >= 0)
+        {
+            var item = inv.ItemAt(m_PendingTrashSlot);
+            var animal = manager.FindByItem(item, out bool asAdult);
+
+            if (animal != null && inv.RemoveAt(m_PendingTrashSlot, 1) > 0)
+            {
+                var placed = manager.SpawnAt(animal, manager.PenCenter, asAdult);
+
+                if (placed != null)
+                {
+                    AudioManager.PlayBuySell();
+                    Debug.Log($"[สัตว์] ปล่อย {animal.displayName} " +
+                              $"({(asAdult ? "ตัวโต" : "ลูกสัตว์")}) ลงคอกแล้ว");
+                }
+            }
+        }
+
+        CloseConfirm();
+    }
+
+    // ---- ร่วมกัน ----
+
+    private void ShowConfirm()
+    {
         m_TrashConfirm.SetActive(true);
         m_TrashConfirm.transform.SetAsLastSibling();
     }
@@ -493,10 +578,10 @@ public class InventoryUI : MonoBehaviour
                 Debug.Log($"[กระเป๋า] ทิ้ง {item.displayName} x{taken}");
         }
 
-        CancelTrash();
+        CloseConfirm();
     }
 
-    private void CancelTrash()
+    private void CloseConfirm()
     {
         m_PendingTrashSlot = -1;
         if (m_TrashConfirm != null) m_TrashConfirm.SetActive(false);

@@ -62,6 +62,33 @@ public class AnimalManager : MonoBehaviour
 
     public Vector2 PenCenter => penCenter != null ? (Vector2)penCenter.position : (Vector2)transform.position;
 
+    /// <summary>
+    /// หาว่าไอเทมชิ้นนี้เป็นสัตว์หรือไข่ของชนิดไหน
+    ///
+    /// ใช้ตอนผู้เล่นลากสัตว์ออกจากกระเป๋ามาวางในฟาร์ม
+    /// คืน null ถ้าไม่ใช่ของที่เกี่ยวกับสัตว์
+    /// </summary>
+    public AnimalData FindByItem(ItemData item, out bool asAdult)
+    {
+        asAdult = false;
+        if (item == null) return null;
+
+        foreach (var animal in animals)
+        {
+            if (animal == null) continue;
+
+            if (animal.adultItem == item)
+            {
+                asAdult = true;
+                return animal;
+            }
+
+            if (animal.eggItem == item) return animal;
+        }
+
+        return null;
+    }
+
     /// <summary>จุดนี้อยู่ในคอกไหม</summary>
     public bool IsInsidePen(Vector2 point)
     {

@@ -192,6 +192,17 @@ public class SettingsMenuUI : MonoBehaviour
 
         AddSpace(14f);
 
+        // ---- ภาษา ----
+        AddLabel(Localization.IsEnglish ? "ภาษา:  อังกฤษ" : "ภาษา:  ไทย");
+
+        var langRow = AddRow();
+        AddRowButton(langRow, "ไทย", Localization.IsEnglish ? tabIdleColor : buttonColor,
+                     () => SetLanguage(GameLanguage.Thai));
+        AddRowButton(langRow, "English", Localization.IsEnglish ? buttonColor : tabIdleColor,
+                     () => SetLanguage(GameLanguage.English));
+
+        AddSpace(14f);
+
         // ---- หน้าจอ ----
         AddLabel(Screen.fullScreen ? "โหมดจอ:  เต็มจอ" : "โหมดจอ:  หน้าต่าง");
 
@@ -303,6 +314,15 @@ public class SettingsMenuUI : MonoBehaviour
         IsOpen = false;
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    /// <summary>สลับภาษาทั้งเกม — ตัวแปลจะไล่เปลี่ยนข้อความบนจอให้เองภายในเสี้ยววินาที</summary>
+    private void SetLanguage(GameLanguage language)
+    {
+        Localization.Current = language;
+        AudioManager.PlaySelect();
+
+        ShowTab(Tab.Settings);
     }
 
     private void ChangeVolume(float delta) => SetVolume(AudioManager.Master + delta);

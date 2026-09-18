@@ -18,6 +18,15 @@ public static class UIFont
     private static Font s_Cached;
 
     /// <summary>
+    /// ตอนนี้ใช้ฟอนต์ที่เอามาใส่เองในโปรเจกต์อยู่ไหม
+    ///
+    /// สำคัญตรงที่: ฟอนต์พวกนี้มีน้ำหนักตัวอักษรมาให้แล้ว (Medium / SemiBold)
+    /// ถ้าไปสั่งตัวหนาซ้ำอีก Unity จะปั๊มเส้นให้หนาขึ้นเองแบบหยาบๆ
+    /// ตัวอักษรจะบวมและดูขาวโพลนจนแสบตา
+    /// </summary>
+    public static bool UsingProjectFont { get; private set; }
+
+    /// <summary>
     /// ฟอนต์ในโปรเจกต์ที่จะลองหาก่อน (พาธเทียบจากโฟลเดอร์ Resources ไม่ต้องใส่นามสกุล)
     ///
     /// ชื่อ "GameFont" คือชื่อกลางๆ — ตั้งชื่อไฟล์เป็นอันนี้แล้วใช้ได้เลย
@@ -74,6 +83,8 @@ public static class UIFont
             if (font == null) continue;
 
             s_Cached = font;
+            UsingProjectFont = true;
+
             Debug.Log($"[UIFont] ใช้ฟอนต์จากโปรเจกต์: {font.name}");
             return s_Cached;
         }

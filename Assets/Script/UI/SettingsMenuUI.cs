@@ -28,7 +28,7 @@ public class SettingsMenuUI : MonoBehaviour
         if (Time.timeScale <= 0f) Time.timeScale = 1f;
     }
 
-    private const string VolumeKey = "ExoticFarm.Volume";
+    // ระดับเสียงย้ายไปเก็บที่ AudioManager แล้ว (ต้องเกิน 100% ได้ AudioListener ทำไม่ได้)
 
     [Header("สี")]
     public Color panelColor = new Color(0.10f, 0.12f, 0.10f, 0.98f);
@@ -68,7 +68,7 @@ public class SettingsMenuUI : MonoBehaviour
         m_Root.SetActive(false);
         IsOpen = false;
 
-        AudioListener.volume = PlayerPrefs.GetFloat(VolumeKey, 1f);
+        AudioManager.LoadMaster();
         ApplyCursor();
     }
 
@@ -177,12 +177,18 @@ public class SettingsMenuUI : MonoBehaviour
         AddHeading("ตั้งค่าทั่วไป");
 
         // ---- เสียง ----
-        AddLabel($"ระดับเสียง:  {Mathf.RoundToInt(AudioListener.volume * 100f)}%");
+        int percent = Mathf.RoundToInt(AudioManager.Master * 100f);
+        string note = percent > 100 ? "   (ดังกว่าปกติ)" : percent == 0 ? "   (ปิดอยู่)" : "";
+        AddLabel($"ระดับเสียง:  {percent}%{note}");
 
         var volumeRow = AddRow();
         AddRowButton(volumeRow, "− เบาลง", buttonColor, () => ChangeVolume(-0.1f));
         AddRowButton(volumeRow, "+ ดังขึ้น", buttonColor, () => ChangeVolume(0.1f));
-        AddRowButton(volumeRow, "ปิดเสียง", tabIdleColor, () => SetVolume(0f));
+        AddRowButton(volumeRow, "ปกติ 100%", tabIdleColor, () => SetVolume(1f));
+
+        var volumeRow2 = AddRow();
+        AddRowButton(volumeRow2, "ปิดเสียง", tabIdleColor, () => SetVolume(0f));
+        AddRowButton(volumeRow2, "ดังสุด 200%", buttonColor, () => SetVolume(AudioManager.MaxMaster));
 
         AddSpace(14f);
 
@@ -299,15 +305,15 @@ public class SettingsMenuUI : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    private void ChangeVolume(float delta) => SetVolume(AudioListener.volume + delta);
+    private void ChangeVolume(float delta) => SetVolume(AudioManager.Master + delta);
 
+    /// <summary>ตั้งระดับเสียงรวม 0–200% (AudioManager เซฟค่าให้เอง)</summary>
     private void SetVolume(float value)
     {
-        value = Mathf.Clamp01(value);
+        AudioManager.Master = Mathf.Clamp(value, 0f, AudioManager.MaxMaster);
 
-        AudioListener.volume = value;
-        PlayerPrefs.SetFloat(VolumeKey, value);
-        PlayerPrefs.Save();
+        // ให้ได้ยินทันทีว่าดังแค่ไหน
+        AudioManager.PlaySelect();
 
         ShowTab(Tab.Settings);
     }

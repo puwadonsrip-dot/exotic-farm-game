@@ -18,6 +18,39 @@ public class AudioManager : MonoBehaviour
     [Range(0f, 1f)] public float sfxVolume = 0.85f;
     [Range(0f, 1f)] public float ambienceVolume = 0.35f;
 
+    /// <summary>
+    /// ตัวคูณเสียงรวม ปรับได้ 0–200% จากเมนูตั้งค่า
+    ///
+    /// ทำไมไม่ใช้ AudioListener.volume: ค่านั้น Unity ล็อกไว้ที่ 1.0 เกินไม่ได้
+    /// เลยต้องมาคูณเองตรงนี้แทน — PlayOneShot รับค่าเกิน 1 ได้ และเสียงบรรยากาศ
+    /// ตั้งฐานไว้ต่ำ (0.35) พอคูณ 2 ก็ยังไม่ชนเพดาน
+    /// </summary>
+    public const float MaxMaster = 2f;
+
+    private const string MasterKey = "audio_master";
+    private static float s_Master = 1f;
+
+    /// <summary>ระดับเสียงรวม 0 = เงียบ, 1 = ปกติ, 2 = ดังสุด</summary>
+    public static float Master
+    {
+        get => s_Master;
+        set
+        {
+            s_Master = Mathf.Clamp(value, 0f, MaxMaster);
+            PlayerPrefs.SetFloat(MasterKey, s_Master);
+            PlayerPrefs.Save();
+        }
+    }
+
+    /// <summary>อ่านค่าที่เคยตั้งไว้กลับมาตอนเปิดเกม</summary>
+    public static void LoadMaster()
+    {
+        s_Master = Mathf.Clamp(PlayerPrefs.GetFloat(MasterKey, 1f), 0f, MaxMaster);
+
+        // ตัวนี้ต้องเป็น 1 เสมอ ไม่งั้นมันจะไปหารเสียงซ้ำอีกชั้น
+        AudioListener.volume = 1f;
+    }
+
     [Tooltip("เวลาที่ใช้ค่อยๆ สลับเสียงบรรยากาศกลางวัน/กลางคืน (วินาที)")]
     public float ambienceFadeTime = 2.5f;
 
@@ -53,6 +86,7 @@ public class AudioManager : MonoBehaviour
             return;
         }
         Instance = this;
+        LoadMaster();
 
         m_Sfx = gameObject.AddComponent<AudioSource>();
         m_Sfx.playOnAwake = false;
@@ -79,7 +113,7 @@ public class AudioManager : MonoBehaviour
         if (clip == null) return;
 
         m_AmbienceA.clip = clip;
-        m_AmbienceA.volume = ambienceVolume;
+        m_AmbienceA.volume = AmbienceTarget;
         m_AmbienceA.Play();
     }
 
@@ -111,17 +145,22 @@ public class AudioManager : MonoBehaviour
         m_UsingA = !m_UsingA;
     }
 
+    /// <summary>ระดับเสียงบรรยากาศจริงหลังคูณเสียงรวมแล้ว (AudioSource รับได้ไม่เกิน 1)</summary>
+    private float AmbienceTarget => Mathf.Clamp01(ambienceVolume * s_Master);
+
     /// <summary>ตัวที่กำลังใช้ดังขึ้น อีกตัวเบาลงจนเงียบ</summary>
     private void FadeAmbience()
     {
+        float target = AmbienceTarget;
+
         float step = ambienceFadeTime > 0f
-            ? (ambienceVolume / ambienceFadeTime) * Time.unscaledDeltaTime
-            : ambienceVolume;
+            ? (Mathf.Max(target, 0.05f) / ambienceFadeTime) * Time.unscaledDeltaTime
+            : 1f;
 
         var active = m_UsingA ? m_AmbienceA : m_AmbienceB;
         var fading = m_UsingA ? m_AmbienceB : m_AmbienceA;
 
-        active.volume = Mathf.MoveTowards(active.volume, ambienceVolume, step);
+        active.volume = Mathf.MoveTowards(active.volume, target, step);
         fading.volume = Mathf.MoveTowards(fading.volume, 0f, step);
 
         if (fading.volume <= 0.001f && fading.isPlaying) fading.Stop();
@@ -135,7 +174,9 @@ public class AudioManager : MonoBehaviour
 
         // เปลี่ยนระดับเสียงนิดหน่อยทุกครั้ง ฟังแล้วไม่เหมือนหุ่นยนต์
         m_Sfx.pitch = 1f + Random.Range(-pitchJitter, pitchJitter);
-        m_Sfx.PlayOneShot(clip, sfxVolume);
+
+        // PlayOneShot รับค่าเกิน 1 ได้ — ตรงนี้แหละที่ทำให้ดันไปถึง 200% ได้จริง
+        m_Sfx.PlayOneShot(clip, sfxVolume * s_Master);
     }
 
     private void PlayRandom(AudioClip[] clips)

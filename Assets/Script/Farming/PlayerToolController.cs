@@ -287,7 +287,8 @@ public class PlayerToolController : MonoBehaviour
         if (DayTransitionUI.IsPlaying || SettingsMenuUI.IsOpen
             || NameEntryUI.IsOpen || SettingsMenuUI.CursorFree
             || ScreenFadeUI.IsFading || AnimalInfoUI.IsOpen
-            || AdminModeUI.IsOpen) return;
+            || AdminModeUI.IsOpen
+            || ItemDragHandler.IsDragging) return;   // กำลังลากของอยู่ อย่าเผลอไถดิน
 
         // ---- คลิกซ้าย = ใช้อุปกรณ์ (กดค้างได้ ทำซ้ำเรื่อยๆ) ----
         // ชี้อยู่บนเตียง = ปล่อยให้เตียงรับคลิกไป ไม่ต้องไถดิน

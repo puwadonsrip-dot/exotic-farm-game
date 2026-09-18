@@ -132,7 +132,7 @@ public class NameEntryUI : MonoBehaviour
 
         if (kb.backspaceKey.wasPressedThisFrame && m_Typed.Length > 0)
         {
-            m_Typed = m_Typed.Substring(0, m_Typed.Length - 1);
+            m_Typed = ThaiText.Backspace(m_Typed);
             m_WarningText.text = "";
             RefreshField();
         }

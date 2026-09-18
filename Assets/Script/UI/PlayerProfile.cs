@@ -35,7 +35,7 @@ public static class PlayerProfile
         value = (value ?? "").Trim();
 
         if (value.Length > MaxNameLength)
-            value = value.Substring(0, MaxNameLength);
+            value = ThaiText.Cut(value, MaxNameLength);
 
         if (string.IsNullOrEmpty(value)) value = DefaultName;
 

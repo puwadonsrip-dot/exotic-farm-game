@@ -239,6 +239,92 @@ public class InventorySystem : MonoBehaviour
         OnChanged?.Invoke();
     }
 
+    // ================= ย้าย / ทิ้งของ =================
+
+    /// <summary>
+    /// สลับของสองช่อง — ถ้าเป็นของชนิดเดียวกันจะรวมกองให้แทน
+    ///
+    /// ใช้ตอนลากไอเทมไปวางอีกช่องในกระเป๋า
+    /// </summary>
+    public void SwapSlots(int from, int to)
+    {
+        if (from == to) return;
+        if (from < 0 || from >= slots.Count) return;
+        if (to < 0 || to >= slots.Count) return;
+
+        var a = slots[from];
+        var b = slots[to];
+
+        if (a.IsEmpty) return;
+
+        // ของชนิดเดียวกันและกองปลายทางยังไม่เต็ม = เทรวมกัน
+        if (!b.IsEmpty && a.item == b.item && b.count < b.item.maxStack)
+        {
+            int space = b.item.maxStack - b.count;
+            int move = Mathf.Min(space, a.count);
+
+            b.count += move;
+            a.count -= move;
+            if (a.count <= 0) a.Clear();
+        }
+        else
+        {
+            var item = a.item;
+            int count = a.count;
+
+            a.item = b.item;
+            a.count = b.count;
+
+            b.item = item;
+            b.count = count;
+        }
+
+        // ช่องที่ถืออยู่ต้องตามของไปด้วย ไม่งั้นมือจะเปลี่ยนของเอง
+        if (selectedIndex == from) selectedIndex = to < HotbarSize ? to : NoSelection;
+        else if (selectedIndex == to) selectedIndex = from < HotbarSize ? from : NoSelection;
+
+        OnChanged?.Invoke();
+    }
+
+    /// <summary>ของที่อยู่ในช่องนั้น (null ถ้าว่างหรือ index ผิด)</summary>
+    public ItemData ItemAt(int index)
+    {
+        if (index < 0 || index >= slots.Count) return null;
+        return slots[index].IsEmpty ? null : slots[index].item;
+    }
+
+    public int CountAt(int index)
+    {
+        if (index < 0 || index >= slots.Count) return 0;
+        return slots[index].IsEmpty ? 0 : slots[index].count;
+    }
+
+    /// <summary>
+    /// เอาของออกจากช่องที่ระบุ คืนจำนวนที่เอาออกได้จริง
+    ///
+    /// count &lt;= 0 หมายถึงเอาออกทั้งกอง
+    /// ใช้ทั้งตอนทิ้งลงถังขยะและตอนโยนลงพื้น
+    /// </summary>
+    public int RemoveAt(int index, int count = 0)
+    {
+        if (index < 0 || index >= slots.Count) return 0;
+
+        var slot = slots[index];
+        if (slot.IsEmpty) return 0;
+
+        int take = count <= 0 ? slot.count : Mathf.Min(count, slot.count);
+
+        slot.count -= take;
+        if (slot.count <= 0)
+        {
+            slot.Clear();
+            if (selectedIndex == index) selectedIndex = NoSelection;
+        }
+
+        OnChanged?.Invoke();
+        return take;
+    }
+
     public int CountOf(ItemData item)
     {
         if (item == null) return 0;

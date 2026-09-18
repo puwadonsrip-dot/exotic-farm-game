@@ -239,7 +239,9 @@ public class CutsceneUI : MonoBehaviour
         {
             m_Revealed += charsPerSecond * dt;
             int shown = Mathf.Clamp(Mathf.FloorToInt(m_Revealed), 0, total);
-            m_BodyText.text = line.text.Substring(0, shown);
+
+            // ตัดตามกลุ่มอักษร ไม่ให้สระ/วรรณยุกต์ไทยหลุดจากพยัญชนะ
+            m_BodyText.text = ThaiText.Cut(line.text, shown);
         }
 
         bool done = m_Revealed >= total;
@@ -414,7 +416,12 @@ public class CutsceneUI : MonoBehaviour
         // ---- ข้อความหลัก ----
         m_BodyText = MakeText(inner.transform, 38, TextAnchor.UpperLeft, textColor);
         m_BodyText.horizontalOverflow = HorizontalWrapMode.Wrap;
-        m_BodyText.lineSpacing = 1.25f;
+
+        // ตัวหนาแบบสังเคราะห์ทำให้สระบน/วรรณยุกต์ไทยเละและเบียดกัน — ใช้ตัวปกติแทน
+        m_BodyText.fontStyle = FontStyle.Normal;
+
+        // เผื่อที่ให้สระบนกับวรรณยุกต์ ไม่ให้โดนบรรทัดบนตัดหัว
+        m_BodyText.lineSpacing = 1.4f;
         var bodyRT = m_BodyText.rectTransform;
         bodyRT.anchorMin = Vector2.zero;
         bodyRT.anchorMax = Vector2.one;

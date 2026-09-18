@@ -60,12 +60,18 @@ public class InventoryUI : MonoBehaviour
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void ResetState() => IsBackpackOpen = false;
 
+    /// <summary>ตัวเดียวในฉาก — ให้ตัวลากของเรียกใช้ตอนจะทิ้งของ</summary>
+    public static InventoryUI Instance { get; private set; }
+
     private class SlotView
     {
         public Image border;
         public RectTransform innerRT;
         public Image icon;
         public Text count;
+
+        /// <summary>ตัวจัดการลากวางของช่องนี้ — ต้องอัปเดต slotIndex ทุกครั้งที่วาดใหม่</summary>
+        public ItemDragHandler drag;
     }
 
     private readonly List<SlotView> m_HotbarViews = new List<SlotView>();
@@ -86,8 +92,14 @@ public class InventoryUI : MonoBehaviour
     private readonly List<Image> m_BagTabImages = new List<Image>();
     private readonly List<int> m_FilteredSlots = new List<int>();
 
+    // ---- ถังขยะ ----
+    private GameObject m_TrashConfirm;
+    private Text m_TrashText;
+    private int m_PendingTrashSlot = -1;
+
     private void Start()
     {
+        Instance = this;
         m_Font = UIFont.Get();   // ฟอนต์ที่แสดงภาษาไทยและสัญลักษณ์ ฿ ได้
 
         BuildUI();
@@ -105,6 +117,8 @@ public class InventoryUI : MonoBehaviour
 
     private void OnDestroy()
     {
+        if (Instance == this) Instance = null;
+
         if (InventorySystem.Instance != null)
             InventorySystem.Instance.OnChanged -= Redraw;
     }
@@ -208,6 +222,9 @@ public class InventoryUI : MonoBehaviour
         barImage.color = barColor;
 
         var barRT = (RectTransform)bar.transform;
+        // ปล่อยของบนแถบ Hotbar (ไม่ตรงช่อง) = ไม่ทำอะไร ไม่ใช่การโยนทิ้ง
+        bar.AddComponent<InventoryUIArea>();
+
         barRT.anchorMin = barRT.anchorMax = new Vector2(0.5f, 0f);
         barRT.pivot = new Vector2(0.5f, 0f);
         barRT.anchoredPosition = new Vector2(0f, 20f);
@@ -239,6 +256,7 @@ public class InventoryUI : MonoBehaviour
         const int padding = 40;        // ขอบรอบตารางช่อง
         const int titleHeight = 84;    // แถบหัวข้อด้านบน ต้องสูงพอไม่ให้ตัวอักษรทับตาราง
         const int tabHeight = 66;      // แถวปุ่มแท็บใต้หัวข้อ
+        const int trashHeight = 104;   // แถบถังขยะใต้ตาราง
 
         // ตัวครอบทั้งจอ มีฉากหลังดำจางๆ ให้กระเป๋าเด่นออกมาจากฉาก
         m_BackpackPanel = new GameObject("BackpackRoot", typeof(RectTransform));
@@ -259,12 +277,15 @@ public class InventoryUI : MonoBehaviour
         var panelImg = panelGO.AddComponent<Image>();
         panelImg.color = panelColor;
 
+        // ปล่อยของบนพื้นที่ว่างของหน้ากระเป๋า = ไม่ทำอะไร คืนที่เดิม
+        panelGO.AddComponent<InventoryUIArea>();
+
         var panelRT = (RectTransform)panelGO.transform;
         panelRT.anchorMin = panelRT.anchorMax = new Vector2(0.5f, 0.5f);
         panelRT.pivot = new Vector2(0.5f, 0.5f);
         panelRT.anchoredPosition = new Vector2(0f, 40f);
         panelRT.sizeDelta = new Vector2(gridWidth + padding * 2,
-                                        gridHeight + padding * 2 + titleHeight + tabHeight);
+                                        gridHeight + padding * 2 + titleHeight + tabHeight + trashHeight);
 
         var title = CreateText(panelGO.transform, "Title", 40, TextAnchor.MiddleCenter);
         title.text = "BAG        ( I )";
@@ -326,8 +347,160 @@ public class InventoryUI : MonoBehaviour
                 isHotbarSlot ? i : -1));
         }
 
+        BuildTrashZone(panelGO.transform, gridWidth, trashHeight, padding);
+        BuildTrashConfirm(m_BackpackPanel.transform);
+
         m_BackpackPanel.SetActive(false);
         IsBackpackOpen = false;
+    }
+
+    // ================= ถังขยะ =================
+
+    /// <summary>แถบถังขยะใต้ตาราง ลากของมาปล่อยแล้วทิ้งถาวร</summary>
+    private void BuildTrashZone(Transform parent, int gridWidth, int height, int padding)
+    {
+        var zone = new GameObject("TrashZone", typeof(RectTransform));
+        zone.transform.SetParent(parent, false);
+
+        var image = zone.AddComponent<Image>();
+        image.sprite = UIShapes.RoundedRect(16);
+        image.type = Image.Type.Sliced;
+        image.color = new Color(0.36f, 0.13f, 0.14f, 0.92f);
+
+        zone.AddComponent<InventoryTrashZone>();
+
+        var rt = (RectTransform)zone.transform;
+        rt.anchorMin = rt.anchorMax = new Vector2(0.5f, 0f);
+        rt.pivot = new Vector2(0.5f, 0f);
+        rt.anchoredPosition = new Vector2(0f, padding * 0.5f);
+        rt.sizeDelta = new Vector2(gridWidth, height - padding * 0.5f);
+
+        var label = CreateText(zone.transform, "Label", 30, TextAnchor.MiddleCenter);
+        label.text = "ลากของมาทิ้งตรงนี้        |        ลากออกนอกกระเป๋า = วางลงพื้น";
+        label.color = new Color(1f, 0.82f, 0.82f, 0.92f);
+
+        var labelRT = label.rectTransform;
+        labelRT.anchorMin = Vector2.zero;
+        labelRT.anchorMax = Vector2.one;
+        labelRT.offsetMin = new Vector2(12f, 8f);
+        labelRT.offsetMax = new Vector2(-12f, -8f);
+    }
+
+    /// <summary>หน้าต่างยืนยันก่อนทิ้งของ — ทิ้งแล้วเอาคืนไม่ได้ เลยต้องถามก่อน</summary>
+    private void BuildTrashConfirm(Transform parent)
+    {
+        m_TrashConfirm = new GameObject("TrashConfirm", typeof(RectTransform));
+        m_TrashConfirm.transform.SetParent(parent, false);
+
+        var dim = m_TrashConfirm.AddComponent<Image>();
+        dim.color = new Color(0f, 0f, 0f, 0.6f);
+        m_TrashConfirm.AddComponent<InventoryUIArea>();
+
+        var dimRT = (RectTransform)m_TrashConfirm.transform;
+        dimRT.anchorMin = Vector2.zero;
+        dimRT.anchorMax = Vector2.one;
+        dimRT.offsetMin = Vector2.zero;
+        dimRT.offsetMax = Vector2.zero;
+
+        var box = new GameObject("Box", typeof(RectTransform));
+        box.transform.SetParent(m_TrashConfirm.transform, false);
+
+        var boxImg = box.AddComponent<Image>();
+        boxImg.sprite = UIShapes.RoundedRect(18);
+        boxImg.type = Image.Type.Sliced;
+        boxImg.color = new Color(0.14f, 0.13f, 0.14f, 0.99f);
+
+        var boxRT = (RectTransform)box.transform;
+        boxRT.anchorMin = boxRT.anchorMax = new Vector2(0.5f, 0.5f);
+        boxRT.pivot = new Vector2(0.5f, 0.5f);
+        boxRT.anchoredPosition = Vector2.zero;
+        boxRT.sizeDelta = new Vector2(680f, 260f);
+
+        m_TrashText = CreateText(box.transform, "Message", 32, TextAnchor.MiddleCenter);
+        var msgRT = m_TrashText.rectTransform;
+        msgRT.anchorMin = new Vector2(0f, 0.4f);
+        msgRT.anchorMax = new Vector2(1f, 1f);
+        msgRT.offsetMin = new Vector2(24f, 0f);
+        msgRT.offsetMax = new Vector2(-24f, -20f);
+
+        MakeConfirmButton(box.transform, "ทิ้งเลย", new Color(0.62f, 0.22f, 0.23f, 1f),
+                          -160f, ConfirmTrash);
+        MakeConfirmButton(box.transform, "ไม่ทิ้ง", new Color(0.26f, 0.26f, 0.28f, 1f),
+                          160f, CancelTrash);
+
+        m_TrashConfirm.SetActive(false);
+    }
+
+    private void MakeConfirmButton(Transform parent, string label, Color color,
+                                   float x, UnityEngine.Events.UnityAction action)
+    {
+        var go = new GameObject("Button", typeof(RectTransform));
+        go.transform.SetParent(parent, false);
+
+        var image = go.AddComponent<Image>();
+        image.sprite = UIShapes.RoundedRect(14);
+        image.type = Image.Type.Sliced;
+        image.color = color;
+
+        var rt = (RectTransform)go.transform;
+        rt.anchorMin = rt.anchorMax = new Vector2(0.5f, 0f);
+        rt.pivot = new Vector2(0.5f, 0f);
+        rt.anchoredPosition = new Vector2(x, 28f);
+        rt.sizeDelta = new Vector2(260f, 68f);
+
+        var button = go.AddComponent<Button>();
+        button.targetGraphic = image;
+        button.onClick.AddListener(action);
+
+        var text = CreateText(go.transform, "Label", 30, TextAnchor.MiddleCenter);
+        text.text = label;
+        var textRT = text.rectTransform;
+        textRT.anchorMin = Vector2.zero;
+        textRT.anchorMax = Vector2.one;
+        textRT.offsetMin = Vector2.zero;
+        textRT.offsetMax = Vector2.zero;
+    }
+
+    /// <summary>ตัวลากของเรียกเข้ามาเมื่อปล่อยของลงถังขยะ</summary>
+    public void AskTrash(int slotIndex)
+    {
+        var inv = InventorySystem.Instance;
+        if (inv == null || m_TrashConfirm == null) return;
+
+        var item = inv.ItemAt(slotIndex);
+        if (item == null) return;
+
+        m_PendingTrashSlot = slotIndex;
+
+        int count = inv.CountAt(slotIndex);
+        m_TrashText.text = count > 1
+            ? $"ทิ้ง {item.displayName} x{count} ทั้งกองเลยไหม\n\nทิ้งแล้วเอาคืนไม่ได้"
+            : $"ทิ้ง {item.displayName} เลยไหม\n\nทิ้งแล้วเอาคืนไม่ได้";
+
+        m_TrashConfirm.SetActive(true);
+        m_TrashConfirm.transform.SetAsLastSibling();
+    }
+
+    private void ConfirmTrash()
+    {
+        var inv = InventorySystem.Instance;
+        if (inv != null && m_PendingTrashSlot >= 0)
+        {
+            var item = inv.ItemAt(m_PendingTrashSlot);
+            int taken = inv.RemoveAt(m_PendingTrashSlot);
+
+            if (item != null && taken > 0)
+                Debug.Log($"[กระเป๋า] ทิ้ง {item.displayName} x{taken}");
+        }
+
+        CancelTrash();
+    }
+
+    private void CancelTrash()
+    {
+        m_PendingTrashSlot = -1;
+        if (m_TrashConfirm != null) m_TrashConfirm.SetActive(false);
+        AudioManager.PlaySelect();
     }
 
     /// <summary>ปุ่มแท็บกรองของในกระเป๋า</summary>
@@ -394,6 +567,12 @@ public class InventoryUI : MonoBehaviour
                 AudioManager.PlaySelect();
             });
         }
+
+        // ---- ลากย้ายของ ----
+        // ใส่ทุกช่อง รวมช่องในกระเป๋าที่ index เปลี่ยนไปตามแท็บที่กรอง
+        // (DrawSlot จะอัปเดต slotIndex ให้ตรงทุกครั้งที่วาดใหม่)
+        view.drag = slotGO.AddComponent<ItemDragHandler>();
+        view.drag.slotIndex = slotIndex;
 
         // ---- พื้นในช่อง ----
         var innerGO = new GameObject("Inner", typeof(RectTransform));
@@ -547,6 +726,9 @@ public class InventoryUI : MonoBehaviour
     {
         var inv = InventorySystem.Instance;
         if (view == null || inv == null || index >= inv.slots.Count) return;
+
+        // ช่องในกระเป๋าเลื่อนไปมาได้ตามแท็บ ต้องบอกตัวลากทุกครั้งว่าตอนนี้คุมช่องไหนอยู่
+        if (view.drag != null) view.drag.slotIndex = index;
 
         // index ติดลบ = ช่องนี้ไม่มีของให้แสดงในแท็บที่กรองอยู่
         if (index < 0)
